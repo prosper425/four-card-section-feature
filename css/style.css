@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+
+  position: relative;
+}
+body * {
+  align-content: center;
+  justify-content: center;
+}
+
+.container {
+  margin: 5px auto;
+  width: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 300px);
+  grid-template-areas:
+    "intro intro intro"
+    ".team."
+    "super.calc"
+    ".karma."
+    "footer footer footer";
+  padding: 10rem;
+  align-self: center;
+  justify-self: center;
+  margin-top: 0px;
+  background-color: hsl(0, 0%, 98%);
+}
+
+.intro {
+  grid-area: intro;
+  text-align: center;
+  margin: 0px;
+  color: hsl(229, 6%, 66%);
+  position: relative;
+  align-self: center;
+  justify-self: center;
+  top: 2rem;
+}
+.intro h1 {
+  margin: 0px;
+  font-weight: 200;
+  letter-spacing: 0.5px;
+}
+.intro .stretch {
+  letter-spacing: 1px;
+  color: hsl(234, 12%, 34%);
+  font-weight: 600;
+}
+.intro p {
+  margin-bottom: 0px;
+  color: hsl(229, 6%, 66%);
+}
+
+.super {
+  grid-area: super;
+  border-top: 10px solid hsl(180, 62%, 55%);
+}
+.team {
+  grid-area: team;
+  border-top: 10px solid hsl(0, 78%, 62%);
+  top: 7.5rem;
+}
+
+.karma {
+  grid-area: karma;
+  border-top: 10px solid hsl(34, 97%, 64%);
+  bottom: 7.5rem;
+}
+.calc {
+  grid-area: calc;
+  border-top: 10px solid hsl(212, 86%, 64%);
+}
+.card {
+  position: relative;
+  width: 300px;
+  height: 250px;
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 3px rgba(0, 0, 0, 0.09);
+  z-index: 1;
+}
+.card p {
+  text-align: left;
+  margin-bottom: 8rem;
+  color: hsl(229, 6%, 66%);
+}
+.card h4 {
+  text-align: left;
+  font-size: 1.2em;
+  color: hsl(234, 12%, 34%);
+}
+.card > img {
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
